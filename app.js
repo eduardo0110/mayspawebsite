@@ -27,7 +27,7 @@ const middleware = require('./controllers/middleware')
 //ROUTES
 
 app.get('/',(req,res,next) => {
-    res.render('index')
+    res.render('test')
 });
 
 app.get('/contact',(req,res) => {
