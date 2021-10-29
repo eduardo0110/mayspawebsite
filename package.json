@@ -13,7 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "start"
+    "test": "start",
+    "start": "node app.js"
   },
   "author": "eduardo severeyn",
   "license": "ISC"
