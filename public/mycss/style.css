@@ -1,0 +1,418 @@
+:root{
+    box-sizing: border-box;
+    font-size:calc(0.5em + 1vw);
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+html{
+    max-width: 100% !important;
+    
+}
+body{
+    background-color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0;
+}
+
+.grid-container{
+    max-width: 100%;
+    
+    margin:0;
+    overflow-x: hidden !important;
+    display:grid;
+    grid-template-rows: minmax(min-content,800px) minmax(300px, 700px)  auto auto minmax(min-content,1350px) minmax(min-content,250px) auto;
+    }
+
+#grid-child-3{
+    background-image:url("/media/labios.jpg");
+    background-size: 25%;
+    background-repeat: round;
+    text-align:center;
+    font-size:1.5em;
+    color:black;;
+}
+.grid-container > * {
+    color:white;
+    border-radius:0.5em;
+}
+header{
+    margin-top:0;
+}
+.sticky {
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    overflow: hidden;
+    background-color:#eaede6;   
+    opacity: 1;
+    max-height: 500px;
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin:0;
+    color:black;
+}
+  .sticky > .logo{
+      max-height: 1000px;
+  }
+  .sticky > li > a {
+    display:block;
+    padding:0 1em;
+    background-color:transparent;
+    text-decoration:none;
+    color:black;
+  }
+ 
+
+.unordered-list {
+    z-index:2;
+    position: fixed;
+    display:flex;
+    width: 100%;
+    margin:0;
+    background-color:transparent;
+    list-style-type:none;
+    border-radius:.2em;
+    flex-direction:row;
+    justify-content: center;
+    max-height:200px;
+    
+}
+
+
+.unordered-list > li > a{
+    display:block;
+    padding:.5em 1em;
+    background-color:transparent;
+    color:white;
+    text-decoration:none;
+}
+.unordered-list >li + li{
+    margin-left:3.5em;
+}
+
+.unordered-list > .nav-rigth{
+    margin-left:auto;
+}
+.logo{
+    max-width: 130px;
+    max-height:130px;
+}
+
+.center-message{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:transparent;
+}
+
+#butonsito{
+    color:white;
+    background-color:#4896C3;
+    padding: .5em 1.2em;
+    box-shadow: 0 8px 16px 0  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.text-button{
+    text-align: center;
+   }
+#learn-how{
+    text-align:center;
+    z-index: 9999;
+    position: relative;
+    top:575px;
+    left:699px;
+    background-color:#4896C3;
+    padding: .8em 2em;
+    color:white;
+    box-shadow: 0 8px 16px 0  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-decoration: none;
+    }
+#learn-how:hover{
+    background-color: #5CB4CE;
+}
+#appoiment{
+  padding-right: 6.5em;
+  margin-left:auto;
+  padding-top: 3.1em;
+  transition:transform .2s;
+  
+}
+#appoiment:hover{
+    transform:scale(.9);
+}
+#center-items{
+     padding-top: 3.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#message-color{
+    color:white
+}
+
+#slidehow{
+    z-index:1;
+    height:100%;
+    width: 100%;
+    margin-top:-1.2em;
+    opacity:.9;
+}
+#slidehow1{
+    background-image:url('/media/spa1.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    margin-top:0;
+    opacity: 0.8;
+    max-height: 850px;
+}
+#slidehow2{
+    background-image:url('/media/spa3.jpg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    margin-top:0;
+    opacity:0.8;
+    max-height: 850px;
+}
+#slidehow3{
+    background-image:url('/media/spa2.jpg');
+    background-size:100% 100%;
+    margin-top:0;
+    opacity:0.8;
+    max-height: 850px;
+}
+#slidehow4{
+    background-image:url('/media/spa4.jpg');
+    background-size:100% 100%;
+    margin-top:0;
+    opacity:0.8;
+    max-height: 850px;
+}
+#grid-child-1{
+    padding:0;
+}
+#opacity{
+    opacity:0;
+    max-width: 1694px;
+}
+#title-slide-how{
+    margin-bottom:1em;
+    text-align:center;
+    padding-top:6.5em;
+    margin-top:0;
+    font-size:3em;
+    }
+.grid-child-4{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:0;
+    margin-top:-15.4em;
+    color:white;
+    font-family: inherit;
+}
+.grid-child-4-child-1{
+    background-color:gray;
+    text-align:center;
+}
+.grid-child-4-child-2{
+    background-color:darkgray;
+    margin-top:0;
+    text-align:center;
+}
+.grid-child-4-child-3{
+    background-color:gray;
+    margin-top:0;
+    text-align:center;
+}
+.grid-child-5{
+    text-align:center;
+    background-color:white;
+    color:black;
+    padding:0;
+    margin-bottom:-4.5em;
+}
+.grid-child-5-p{
+    color:darkgray;
+}
+.solid{
+    border-top:3px solid #bbb;
+}
+.grild-child-5-image{
+    width:65%;
+}
+.modal-child-5{
+    width:25%;
+    position:relative;
+    top:-370px;
+    right:-890px;
+    background-color:white;
+    padding:.2em;
+    box-shadow: 0 8px 16px 0  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.grid-child-6{
+    color:black;
+    padding: 0 8em;
+    text-align:center;
+    background-color:#FDEEEE;
+}
+.grid-child-6-grid{
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 3em;
+}
+.porqueria{
+    margin-top:0;
+}
+.cards{
+    display:flex;
+    height:550px;
+    flex-direction:column;
+    padding:0;
+    background-color:white;
+    color:black;
+    margin-top:.3em;
+}
+.cards:hover{
+    box-shadow: 16px 8px 16px 8px  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.p-services{
+    background-color:#FDBAF9;
+    color:black;
+    text-decoration: none;
+    padding: 1em 0;
+}
+.p-services:hover{
+background-color:#FDEEEE;
+}
+.h3-facial{
+    margin:.3em;
+}
+#card-image{
+flex-shrink: 2;
+}
+.services-button{
+    text-align:center;
+    background-color: white;
+    color:black;
+}
+.logito{
+    padding-top:1em;
+}
+.grid-child-p{
+    padding-bottom:1.7em;
+}
+.grid-child-7{
+    background-color:#B0C1B0;
+    text-align: center;
+    color:white;
+    padding: .5em 0;
+    
+}
+.appoiment-buttom{
+    background-color: white;
+    color:black;
+    padding: .6em 1.5em;
+    text-decoration: none;
+    box-shadow: 16px 8px 16px 8px  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove{
+   50% {border: 5px dotted #5D815D;}
+}
+@keyframes title {
+    0%{transform:scale(.1,.1)}
+    100%{transform:scale(1,1)}
+    
+}
+.h3-appoiment{
+    animation-name: title;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.insta{
+    color:white;
+}
+.instachi{
+    padding-right:.3em;
+    color:#FDBAF9;
+}
+.location{
+    color:#B0C1B0;
+}
+
+.phone{
+    color:#4896C3;
+}
+.hours{
+    color:red;
+}
+
+/*////////////////////////////// */
+
+.body-about{
+   background-image: url("/media/100.jpg");
+       color:white;
+}
+
+.about-h1{
+    color: #4896C3;
+    text-align: center;
+    padding:1.5em;
+}
+
+
+.header-about{
+    background-color:#eaede6; 
+    color:black;
+   
+}
+.about-nav{
+    margin-top:0;
+    display: flex;
+    flex-direction: row;
+    list-style-type:none;
+    text-align: center;
+    color:black;
+   
+    
+}
+
+a:any-link{
+    text-decoration: none;
+}
+
+.prueb{
+    padding-top:3.5em;
+    padding-left: 6em;
+    color:black;
+    
+    
+}
+
+.prue{
+    padding-top:6   .5em;
+}
+
+.a-color{
+    color:black;
+}
+
+.about-mini-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color:black;
+}
+
+.about-text{
+    text-align: center;
+}
+.about-h2{
+    color:#4896C3;
+    text-align: center;
+}
