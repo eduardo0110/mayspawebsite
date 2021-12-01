@@ -3,39 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href='/mycss/style.css'>
     <script src="https://kit.fontawesome.com/8a0cf729f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>May's Spa Beauty</title>
     <link rel="icon" type="image/jpg"href="/media/favicon.ico">
 </head>
 <body>
-    <header id ="header">
-      <section id="link-home">
-        <nav id='nav-bar'>
-           <ul class="unordered-list" id ="navi">
-               <li class="prueba"><a href="#"><img src="/media/logo2.png" alt="may spa facial logo"class="logo"></a></li>
-               <li class="prueba"><a href="#link-home" id="center-items">HOME</a></li>
-               <li class="prueba"><a href="#link-services"id="center-items">SERVICES</a></li>
-               <li class="prueba"><a href="/about"id="center-items">ABOUT US</a></li>
-               <li class="prueba"><a href="/about"id="center-items">CONTACT</a></li>
-               
-               
-               <li class ="nav-right" id="appoiment"><a href="/about" id="butonsito">BOOK AN APPOIMENT</a></li>
-               
+  <header class="header-about">
+    <div class="about-nav-main">
+        <nav>
+           <ul class="about-nav">
+               <li class="prueba"><a class ="a-color" href="#"><img src="/media/logo2.png" alt="may spa facial logo"class="logo"></a></li>
+               <li class="prueb"><a class ="a-color" href="/">HOME</a></li>
+               <li class="prueb"><a class ="a-color" href="/services">SERVICES</a></li>
+               <li class="prueb"><a class ="a-color" href="/about">ABOUT US</a></li>
+               <li class="prueb"><a class ="a-color" href="/contact">CONTACT</a></li>
+               <li class ="prue" id="appoiment"><a href="/contact" id="butonsito">BOOK AN APPOIMENT</a></li>
+               <link rel="icon" type="image/jpg"href="/media/favicon.ico">
            </ul>
-        </nav> 
-        </section>
-   </header>
+        </nav>
+        </div>
+        <div class="topnav">
+           <a href="/" class="active"><img src="/media/logo2.png" style="max-width: 100px; max-height: 100px;" alt="may spa facial logo"class="logo"></a>
+           <p class="p-top-nav">MAY'S SPA BEAUTY</p>
+           <p class ="p-top-nav1">CERTIFIED & LICENSED</p>
+       <div class="contact100-form-social  flex-c-m"id="mediaDiv">
+          <a href="#" class="contact100-form-social-item flex-c-m bg1 m-r-5">
+              <i class="fa fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="contact100-form-social-item flex-c-m bg2 m-r-5">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="contact100-form-social-item flex-c-m bg3">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+           </a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+            <i class="fa fa-bars fa-2x "></i>
+          </a>
+          </div>
+          <div class="second-hamburger togglin" id="navbar-about">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+              <i class="fa fa-bars fa-2x "></i>
+            </a>
+          </div>
+      </header>
+      <div id="myLinks2">
+          <a href="/">HOME</a>
+          <a href="/services">SERVICES</a>
+          <a href="/about">ABOUT</a>
+          <a href="/contact">CONTACT</a>
+        </div>
+  
+  
     <div class='grid-container'>
-      <div id ="grid-child-1">
-        <a id="learn-how" href="home">LEARN MORE</a>
+      <div id="grid-child-1">
+        <a id="learn-how" href="/contact">LEARN MORE</a>
         <div  id="slidehow">
             <div class="mySlides" id="slidehow1">
                 <div class="text-button">
                     <h2 id="title-slide-how">FEEL LIKE IN PARADISE</h2>
                 </div>
-                <img src="/media/slidehow1.jpg"id="opacity">
+                <img  src="/media/slidehow4.jpg"id="opacity">
             </div>
             <div class="mySlides" id="slidehow2">
                 <div class="text-button">
@@ -43,13 +74,13 @@
                     <h2 id="title-slide-how">EXCELLENT DESTINATION</h2>
                  </div>
                 </div>
-                <img  src="/media/slidehow2.jpg"id="opacity">
+                <img  src="/media/slidehow4.jpg"id="opacity">
             </div>
             <div class="mySlides" id="slidehow3">
                 <div class="text-button">
                     <h2 id="title-slide-how">DREAMS COME TRUE HERE</h2>
                 </div>
-                <img  src="/media/slidehow3.jpg"id="opacity">
+                <img  src="/media/slidehow4.jpg"id="opacity">
             </div>
             <div class="mySlides" id="slidehow4">
                 <div class="text-button">
@@ -59,15 +90,16 @@
              </div>
           </div>
     </div>
+
       <div id ='grid-child-3'>
           <div class="text-div">
-              <h3 id= "ready1"class="background-1">WE ARE NOW BACK AT MAY SPA BEAUTY SALON <br>NOW! WITH UP TO 50% DISCOUNTS IN SOME SERVICES!! </h3>
-              <p>Hello there! We are waiting for you! come and have an Spa like out of this world relaxing experience with our top professionals<br>
-                Our Services are wide from Facials to Scalp Micropigmentation , waxing , acne treatment  and much more!<br>
+              <h3 id= "ready1"class="background-1 h3-grid-3 mobile" >WE ARE NOW BACK AT MAY SPA BEAUTY SALON <br>NOW! WITH UP TO 50% DISCOUNTS IN SOME SERVICES!! </h3>
+              <p class="h3-grid-3">Hello there! We are waiting for you! come and have an Spa like out of this world relaxing experience with our top professionals<br>
+                Our Services are wide from Facials to Scalp Micropigmentation , Waxing , Acne Treatments , Platelet Rich Plasma , Laser Hair Removal and much more  and much more!<br>
                 Feel free to call for consultation or to schedule your Appoiment at 609-516-8688 or 609-312-8424!</p>
           </div>
       </div>
-      <div class ='grid-child-4'>
+      <div class ='grid-child-4 mobile'>
           <div class="grid-child-4-child-1">
               <h3><i class="fas fa-map-marker-alt location"></i> OUR LOCATION</h3>
               <p>HAMILTON TOWNSHIP</p>
@@ -81,10 +113,10 @@
               <p>Tuesday 8am-6pm</p>
               <p>Thursday 8am-6pm</p>
               <p>Friday 8am-5:30pm</p>
-              <p>Saturday 8am-4pm</p>
+              <p>Saturday 8am-4:30pm</p>
               
         </div>
-        <div class="grid-child-4-child-3">
+        <div class="grid-child-4-child-3 image-media">
             <h3><i class="fas fa-phone phone"></i> CONTACT US</h3>
             <p>Tel. 609-516-8688</p>
             <p>Cell. 609-312-8424</p>
@@ -94,19 +126,19 @@
               
         </div>
       </div>
-      <div class ='grid-child-5'>
+      <div class ='grid-child-5 mobile'>
           <div class="grid-child-5-1">
               <span><i class="fas fa-spa fa-2x logito"style="color:#68C5D4"></i></span>
               <h4>WELCOME TO MAYSPA BEAUTY SALOON</h4>  
               <p class="grid-child-5-p"><hr class="solid">Get highly quality spa services from our , certified , passionate cosmetologist professionals!.<hr class="solid"></p>
               <p>May's Spa Beauty & Saloon is a professional wellness center making it a perfect destination for those seeking a relaxing confortable and affordable spa experience!<br>
-                Our Professionals are certified & licensed in the State Of New Jersey & and by numerous beauty agencys guaranteeing you  a Top notch service! 
+                Our Professionals are certified & licensed by the State Of New Jersey & and by numerous beauty agencys guaranteeing you  a Top Notch Service! 
               </p>
               <div class="grid-child-5-1-2">
                   <img class="grild-child-5-image" src="/media/spa1.jpg" alt="spa room">
                   <div class="modal-child-5">
                       <h4 class="best-in-class">BEST SPA SERVICE IN THE AREA</h4>
-                      <p>We apply just the best products for face, hair , and every area of the body we touch! with cutting edge technology & of course have experienced and kind experts to take care of our Client's</p>
+                      <p>We apply just the best products for face, hair , and every area of the body we touch! with cutting edge technology &  experienced ,  kind experts to take care of our Client's</p>
                   </div>
               </div>
 
@@ -116,50 +148,56 @@
         <section id="link-services">
           <div class="our-services">
               <h2>OUR SERVICES</h2>
+              <button class="buttom-service"type="button"><a  class ="allservices-buttom"href="/services">Click here to explore all of our services!</button></a>
               <p class= grid-child-p>Here in May's Spa Saloon we offer a variety of services such as , Acne Treatment , Facials! , Botulinum Toxin procedure!(botox), massages and more!<br>
                come and ask for about any inquiry or question you might have!</p>
               <div class="grid-child-6-grid">
                   <div class="cards">
                     <img id="card-image"src="/media/ance2.jpg" style="max-width: 659px;max-height: 320px;"alt="customer facial">
-                    <h3 class="h3-facial">ACNE TREATMENT!</h3>
-                    <p>predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful</p>
-                    <p class="p-services"><a style="text-decoration:none;color:black;" href="#">Our Facial Services</a></p>
+                    <h3 class="h3-facial">ACNE!</h3>
+                    <div class="service-p">
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic,Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                    <p class="p-services"><a style="text-decoration:none;color:black;" href="#">ACNE TREATMENTS</a></p>
                   </div>
-                  <div class="cards porqueria">
+                </div>
+                  <div class="cards">
                     <img id="card-image" src="/media/facial2.jpg"style="max-width: 659px;max-height: 320px;" alt="customer facial">
                     <h3 class="h3-facial">FACIALS!</h3>
-                    <p>predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful</p>
-                    <p class="p-services"><a style="text-decoration:none;color:black;" href="#">Our Facial Services</a></p>
+                    <div class="service-p">
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic,Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                    <p class="p-services"><a style="text-decoration:none;color:black;" href="#">FACIAL TREATMENTS</a></p>
                   </div>
+                   </div>
                   <div class="cards">
                     <img id="card-image"src="/media/laser.jpg"style="max-width: 659px;max-height: 320px;" alt="customer facial">
-                    <h3 class="h3-facial">Laser Depilation!</h3>
-                    <p>predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful</p>
-                    <p class="p-services"><a style="text-decoration:none;color:black;" href="#">Our Facial Services</a></p>
+                    <h3 class="h3-facial">LASER DEPILATION!</h3>
+                    <div class="service-p">
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic,Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                    <p class="p-services"><a style="text-decoration:none;color:black;" href="#">LASER PROCEDURES</a></p>
                   </div>
+                 </div>
                   <div class="cards">
                     <img id="card-image" src="/media/waxing.jpg" style="max-width: 659px;max-height: 320px;"alt="customer facial">
                     <h3 class="h3-facial">WAXING!</h3>
-                    <p>predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful</p>
-                    <p class="p-services"><a style="text-decoration:none;color:black;"href="#">Our Facial Services</a></p>
+                    <div class="services-p">
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic,Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                    <p class="p-services"><a style="text-decoration:none;color:black;"href="#">WAXING SERVICES</a></p>
+                    </div>
                   </div>
                  </div>
       </div>
       </section>
       </div>
-      <div class ='grid-child-7'>
+      <div class ='grid-child-7 mobile'>
             <div class="schedule-appoiment">
                 <p><i class="far fa-calendar-times fa-3x"></i></p>
                  <h3 id ="ready1"><p>READY TO YOUR FIRST FACIAL AT 40% OFF!!?</p>
                     DON'T WAIT TO TREAT YOURSELF AND BOOK AN APPOIMENT</h3>
-                 <p><a class ="appoiment-buttom animation" href="#">BOOK AN APPOIMENT</a></p>
+                 <p><a class ="appoiment-buttom animation" href="/contact">BOOK AN APPOIMENT</a></p>
             </div>
         
       </div>
-      <div class ='grid-child-8'>
-          t
-      </div>
-      </div>
+     </div>
       <script>
         var slideIndex = 0;
         carousel();
@@ -178,38 +216,84 @@
         // When the user scrolls the page, execute myFunction 
         //////////////////
         //////////////////
-window.onscroll = function() {myFunction(), testng()};
-   
 
-
-
+   // Get the navbar
+   function myFunction1() {
+  
+  var z = document.getElementById("mediaDiv");
+  z.style.display = "flex"
+  var x = document.getElementById("myLinks2"); 
+  if (x.style.display === "block" && z.style.display === "flex") {
+    z.style.display = "flex";
+    x.style.display = "none";
+  } else {
+    z.style.display = "none";
+    x.style.display = "block";
+  }
+ 
+}
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction2()};
 
 // Get the navbar
- var navbar = document.getElementById("navi");
- var txt = document.getElementById("ready1");
- 
+var navbar = document.getElementById("navbar-about");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function testng(){
- txt.classList.add("h3-appoiment")   
-}
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.remove("unordered-list")
-    navbar.classList.add("sticky")
-    
 
-  } if (window.pageYOffset <= sticky){
-    navbar.classList.remove("sticky");
-    navbar.classList.add("unordered-list")
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction2() {
+if (window.pageYOffset >= sticky) {
+
+navbar.classList.add("sticky")
+} else {
+navbar.classList.remove("sticky");
+navbar.classList.toggle("togglin")
+
+
+}
+}
+function myFunction1() {
+
+  var z = document.getElementById("mediaDiv");
+  z.style.display = "flex"
+  var x = document.getElementById("myLinks2"); 
+  if (x.style.display === "block" && z.style.display === "flex") {
+    z.style.display = "flex";
+    x.style.display = "none";
+  } else {
+    z.style.display = "none";
+    x.style.display = "block";
+  }
+ 
+}
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction2()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar-about");
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction2() {
+if (window.pageYOffset >= sticky) {
+
+navbar.classList.add("sticky")
+} else {
+navbar.classList.remove("sticky");
+navbar.classList.toggle("togglin")
+
+
+}
+}
+ 
       
     
-  }
-}/////////////////////////
-//////////////////
 
-////
+
+
+//////////////////
+//Get the button
 
 
 </script>

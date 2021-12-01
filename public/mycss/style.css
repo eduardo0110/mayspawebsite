@@ -18,13 +18,40 @@ body{
     margin:0;
 }
 
+
+#link-home{
+    color:white;
+}
+@media screen and (max-width:1199px){
+    #link-home{
+    display: none;
+    }
+
+
+}
+
 .grid-container{
     max-width: 100%;
     
     margin:0;
     overflow-x: hidden !important;
     display:grid;
-    grid-template-rows: minmax(min-content,800px) minmax(300px, 700px)  auto auto minmax(min-content,1350px) minmax(min-content,250px) auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    }
+    @media screen and (min-width:500px){
+        .grid-container{
+            grid-template-rows:  minmax(300px,550px) auto auto auto auto auto
+        }
+
+#grid-child-1{
+    color:White;
+}
+
+    @media screen and (max-width:1199px) {
+        #grid-child-1{
+            display: none;
+        }
+
     }
 
 #grid-child-3{
@@ -33,7 +60,13 @@ body{
     background-repeat: round;
     text-align:center;
     font-size:1.5em;
-    color:black;;
+    color:black;
+    margin-top:8.3em;
+}
+@media screen and (max-width:700px){
+    #grid-child-3{
+        margin-top:0;
+    }
 }
 .grid-container > * {
     color:white;
@@ -42,6 +75,7 @@ body{
 header{
     margin-top:0;
 }
+
 .sticky {
     z-index: 999999;
     position: fixed;
@@ -82,6 +116,7 @@ header{
     justify-content: center;
     max-height:200px;
     
+    
 }
 
 
@@ -91,6 +126,12 @@ header{
     background-color:transparent;
     color:white;
     text-decoration:none;
+}
+@media screen and (max-width:1230px){
+    .unordered-list > li > a {
+        display: none;
+
+    }
 }
 .unordered-list >li + li{
     margin-left:3.5em;
@@ -132,6 +173,13 @@ header{
     box-shadow: 0 8px 16px 0  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     text-decoration: none;
     }
+@media screen and (max-width:700px){
+    #learn-how{
+        position:relative;
+        top:360px;
+        left:250px;
+    }
+}
 #learn-how:hover{
     background-color: #5CB4CE;
 }
@@ -168,6 +216,11 @@ header{
     opacity: 0.8;
     max-height: 850px;
 }
+@media screen and (max-width:700px){
+    #slidehow1{
+        max-height: 550px;
+    }
+}
 #slidehow2{
     background-image:url('/media/spa3.jpg');
     background-size:100% 100%;
@@ -176,12 +229,22 @@ header{
     opacity:0.8;
     max-height: 850px;
 }
+@media screen and (max-width:700px){
+    #slidehow2{
+        max-height: 550px;
+    }
+}
 #slidehow3{
     background-image:url('/media/spa2.jpg');
     background-size:100% 100%;
     margin-top:0;
     opacity:0.8;
     max-height: 850px;
+}
+@media screen and (max-width:700px){
+    #slidehow3{
+        max-height: 550px;
+    }
 }
 #slidehow4{
     background-image:url('/media/spa4.jpg');
@@ -190,13 +253,25 @@ header{
     opacity:0.8;
     max-height: 850px;
 }
+@media screen and (max-width:700px){
+    #slidehow4{
+        max-height: 550px;
+    }
+}
+
 #grid-child-1{
     padding:0;
+}
+@media screen and (max-width:1230px){
+    #grid-child-1{
+        display: block;
+    }
 }
 #opacity{
     opacity:0;
     max-width: 1694px;
 }
+
 #title-slide-how{
     margin-bottom:1em;
     text-align:center;
@@ -208,9 +283,16 @@ header{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap:0;
-    margin-top:-15.4em;
     color:white;
     font-family: inherit;
+    
+}
+
+@media screen and (max-width:879px){
+    .grid-child-4{
+        max-width:100%;
+        
+    }
 }
 .grid-child-4-child-1{
     background-color:gray;
@@ -232,6 +314,15 @@ header{
     color:black;
     padding:0;
     margin-bottom:-4.5em;
+
+}
+
+@media screen and (max-width:879px){
+    .grid-child-5{
+        max-width:100%;
+        margin-bottom:-10em;
+        
+    }
 }
 .grid-child-5-p{
     color:darkgray;
@@ -251,11 +342,23 @@ header{
     padding:.2em;
     box-shadow: 0 8px 16px 0  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+@media screen and (max-width:1190px){
+    .modal-child-5{
+        position:relative;
+        top:-140px;
+        right:-500px
+    }
+}
 .grid-child-6{
     color:black;
     padding: 0 8em;
     text-align:center;
     background-color:#FDEEEE;
+}
+@media screen and (max-width:880px){
+    .grid-child-6{
+        padding:0;
+    }
 }
 .grid-child-6-grid{
     display:grid;
@@ -264,6 +367,7 @@ header{
     grid-template-rows: 1fr 1fr;
     padding-bottom: 3em;
 }
+
 .porqueria{
     margin-top:0;
 }
@@ -373,7 +477,7 @@ flex-shrink: 2;
    
 }
 .about-nav{
-    margin-top:0;
+    margin:0;
     display: flex;
     flex-direction: row;
     list-style-type:none;
@@ -415,4 +519,219 @@ a:any-link{
 .about-h2{
     color:#4896C3;
     text-align: center;
+}
+.h3-grid-3{
+    color:black;
+}
+
+/************************BURGER MENU
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  @media screen and  (min-width:1442px){
+      .topnav{
+        display: none;
+      }
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 1em;;
+    text-decoration: none;
+    font-size: normal;
+    display: block;
+  
+
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #7FC3D2;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #7FC3D1;
+    color: black;
+  }
+  .topnav a:link{
+      background-color:#fff;
+     
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color:#fff;
+    color: white;
+  }
+
+}
+.portada{
+    text-align: center; 
+    color:#4896C3;
+}
+
+@media screen and (min-width:1231px){
+    .portada{
+        display: none;
+    }
+}
+
+.portada-buttom{
+    color:white;
+    background-color:#4896C3;
+    padding:.5em 1em;
+}
+
+.buttom-service{
+    background-color: #FDBAF9;
+    padding: .5em 1.5em;
+
+   
+}
+
+.contact-div1{
+    text-align: center;
+}
+
+.allservices-buttom{
+    color:white;
+    font-size: large;
+}
+.services-page{
+    text-align: center;
+    color:#4896C3
+}
+.procedures{
+    text-align: center;
+}
+
+.skin-rejuvenation{
+    width:50vw;
+    padding:.5em;
+    
+}
+.fa-youtube-play{
+    display:inline-block;
+}
+
+#mediaDiv{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 55px;
+    top:60px;
+}
+.p-top-nav{
+    display: inline;
+    background-color: white;
+    position: absolute;
+    right:405px;
+    top:45px;
+}
+.p-top-nav1{
+    display: inline;
+    background-color: white;
+    position: absolute;
+    right:335px;
+    top:65px;
+}
+
+/***************************************ABOUT CSS*/
+
+.about-nav-main{
+    color:black;
+}
+@media screen and (max-width:1440px){
+    .about-nav-main{
+        display: none;
+    }
+}
+
+.second-hamburger{
+    background-color: white;
+    
+    
+}
+.second-hamburger > a {
+    color:black;
+    padding:1em;
+}
+
+@media screen and (min-width:1440px){
+    .second-hamburger{
+        display: none;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  #myLinks2{
+     display: none;
+     position: fixed;
+     background-color:white;
+     top: 6vh;
+     right:5vw;
+     left:0;
+     bottom:0;
+     z-index:9999;
+     
+  }
+
+  #myLinks2 > a{
+      display: block;
+      font-size: large;
+      padding: 1.5em;
+      color:black;
+  }
+
+  #myLinks2 > a:hover{
+      background-color: lightgrey;
+  }
+
+ #butonsito2{
+     display: none;
+ }
+
+.skin-rejuvenation{
+    border: lightseagreen solid 5px;
+}
+
+.div-p{
+    background-color:#7FC3D1; ;
+    text-align: center;
+    font-size: x-large;
+    margin:0;
+}
+
+.div-p-p{
+    padding: 3em;
+    margin:0;}
+
+.website-footer{
+    background-color: #fee0ff;
+    text-align: center;
+}
+.footer-p{
+    padding:0.2em;
 }
