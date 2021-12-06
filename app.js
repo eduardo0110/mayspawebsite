@@ -4,10 +4,12 @@ app =  express();
 require('dotenv').config()
 var sslRedirect  = require("heroku-ssl-redirect").default;
 var compression = require('compression');
-const { Client } = require('pg');
-const client = new Client({
-  connectionString: process.env.DATABASE_URL,
-})
+const { Pool } = require('pg');
+var connectionString = "postgres://postgres@localhost:5432/eduardosevereyn";
+const pool = new Pool ({
+    connectionString:connectionString
+});
+
 
 //MIDDLEWARE
 app.set("port",process.env.PORT || 3000);
@@ -24,7 +26,7 @@ app.use(
 );
 app.use
 const errorController  = require('./controllers/errorController');
-const middleware = require('./controllers/middleware')
+//const middleware = require('./controllers/middleware')
 
 //ROUTES
 
@@ -32,26 +34,27 @@ app.get('/',(req,res,next) => {
     res.render('test')
 });
 app.post('/thanks', async (req, res) => {
-    
+    pool.connect() 
     data = {
             name : req.body.name,
             email : req.body.email,
             service: req.body.service,
             message: req.body.message};
     
-    const text =`INSERT INTO customers(name,email,service,message) VALUES(${data.name}, ${data.email}, ${data.service}, ${data.message}) RETURNING *`
+    const text ='INSERT INTO nada(name,email,services,message) VALUES ($1, $2, $3, $4)';
     const values =[data.name, data.email, data.service, data.message];
     
-    client.connect()
+    
+    
       try {
-        const res = await client.query(text);
-        console.log(res.row[1])
-        client.end()
+        const res = await pool.query(text,values);
+        
+        
     
       }catch (err) {
         console.log(err.stack)
-        client.end()
-      }
+        
+      } 
   res.render('thanks')
 })
 app.get('/contact',(req,res) => {
@@ -70,9 +73,7 @@ app.get('/maysspabeauty.com/contact/*' , (req , res) => {
     res.render('contact')
 })
 
-app.get('/*',function(req,res) {
-    res.redirect(301,res.redirect('https://wwww.'+ req.headers.host+req.url))
-})
+
 app.use(errorController.pageNotFoundError);
 app.use(errorController.internalServerError)
 app.listen(app.get("port"), () => {
