@@ -39,12 +39,12 @@ app.post('/thanks', async (req, res) => {
             service: req.body.service,
             message: req.body.message};
     
-    //const text =`INSERT INTO customers(name,email,service,message) VALUES(${data.name}, ${data.email}, ${data.service}, ${data.message}) RETURNING *`
+    const text =`INSERT INTO customers(name,email,service,message) VALUES(${data.name}, ${data.email}, ${data.service}, ${data.message}) RETURNING *`
     const values =[data.name, data.email, data.service, data.message];
-    customers = 'customers'
+    
     client.connect()
       try {
-        const res = await client.query(`SELECT * FROM ${customers}`);
+        const res = await client.query(text);
         console.log(res.row[1])
         client.end()
     
